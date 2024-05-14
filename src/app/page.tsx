@@ -12,7 +12,7 @@ import FAQsPage from "@/components/FAQ"
 export default function Home() {
   return (
     <>    
-    <main className='main h-fit'>
+    <main className='main h-fit min-w-full'>
       <Hero />
       <div className=''>
         <div className='container mx-auto border-b-2 border-secondary border-gray-200 py-8'>
