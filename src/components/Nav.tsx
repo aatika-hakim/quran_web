@@ -118,9 +118,9 @@ const Nav = () => {
                                         <div className="absolute z-50 w-40 bg-white border border-[#008080] shadow-md text-sm" onMouseLeave={handleDropdownLeave}>
                                             {/* Dropdown content  */}
                                             <Link href="/qaida" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida</Link>
-                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>15 line Quran</Link>
-                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>16 line Quran</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Kalimah and Dua&apos;as</Link>
+                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>15 lines Quran</Link>
+                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>16 lines Quran</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Kalima and Dua</Link>
                                             <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Translation</Link>
                                         </div>
                                     )}
