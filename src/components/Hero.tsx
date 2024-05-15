@@ -31,8 +31,8 @@ export default function Hero() {
                                     </p>
                                 </div>
                                 <div className="flex items-center m-5 space-x-2">
-                                <Buttons links="/about" text="About Us"  properties="text-white"/>
-                                <Buttons links="/courses" text="Courses" properties="text-center"/>
+                                <Buttons links="/about" text="About Us"  properties=""/>
+                                <Buttons links="/courses" text="Courses" properties=""/>
                             </div>
                             </div>
                             

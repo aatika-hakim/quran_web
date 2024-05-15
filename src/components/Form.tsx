@@ -151,10 +151,11 @@ const ContactForm: React.FC = () => {
                     />
                 </div>
                 <div className="text-red-500 text-sm">
-                    {errorMessage && <div>{errorMessage}</div>}
-                    <button className="text-white rounded-sm shadow-inner bg-gradient-to-br from-teal-500 to-teal-600 hover:bg-gradient-to-bl font-medium text-lg px-10 py-2.5 justify-center">
+                    {errorMessage && <div>{errorMessage}
+                    <button onClick={()=> handleSubmit} className="text-white rounded-sm shadow-inner bg-gradient-to-br from-teal-500 to-teal-600 hover:bg-gradient-to-bl font-medium text-lg px-10 py-2.5 justify-center">
                         Send
                     </button>
+                    </div>}
                 </div>
             </form>
         </div>

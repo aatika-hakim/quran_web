@@ -79,7 +79,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonText, buttonL
                         {/* Button with different text for each card */}
                         <a href={buttonLink} className="block">
                             <button className="text-white rounded-sm shadow-inner bg-[#008080] text-xs md:text-sm px-9 py-2.5 justify-center inline-block shrink-0 border border-teal-700 transition-all duration-300 focus:outline-none active:text-teal-700 mt-5">
-                                {buttonText}
+                                Read More
                             </button>
                         </a>
                     </div>
