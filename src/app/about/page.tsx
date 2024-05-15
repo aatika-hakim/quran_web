@@ -1,15 +1,19 @@
 import Image from 'next/image';
 import React from 'react';
+import backgroundImageUrl from '../../../public/bg2.jpg';
 import img from '../../../public/about.png'
 import Buttons from '@/components/Button';
+import Head from '@/components/Head';
 
 
 const About = () => {
   return (
-    <section className="about-section py-20">
+    <>
+        <Head backgroundImage={backgroundImageUrl} heading='About Us' />
+    <section className="about-section px-4 py-20 lg:px-0">
     <div className="container mx-auto">
-        <div className="flex flex-wrap items-center">
-            <div className="content-column w-full lg:w-1/2 order-2 lg:order-1">
+        <div className="items-center">
+            <div className="content-column lg:w-1/2">
                 <div className="inner-column">
                     <div className="sec-title mb-5">
                     <span className="title text-teal-500">Know about us</span>
@@ -22,24 +26,19 @@ const About = () => {
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, commodi debitis molestias iure natus beatae necessitatibus vero voluptas rem eum laboriosam ut nesciunt numquam quis corrupti reprehenderit sunt recusandae ducimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe beatae fuga ipsum suscipit sed, deserunt accusamus veritatis illo cumque facilis hic, et amet voluptate? Necessitatibus dolorem eos ipsam autem aliquid.
                     </div>
                     <div className="btn-box">
-                        <Buttons text='Contact Us' links='/contact' properties=''/>
+                        <Buttons text='Contact Us' links='/contact' properties='shrink-0'/>
                     </div>
                 </div>
             </div>
-
-            { /* Image Column */ }
-            <div className="image-column w-full lg:w-1/2 order-1 lg:order-2">
-                <div className="inner-column  relative">
+        </div>
+        <div className="inner-column  relative">
                     <figure className="image-1 mt-10">
                         <a href="#" className="lightbox-image">
-                        <Image alt="about" src={img} className="" width={390} height={500} />
+                        <Image alt="about" src={img} className="w-[700px] h-[400px]" width={300} height={200} />
                         </a>
                     </figure>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div className="container mx-auto mt-10">
+                <div className="mt-10 lg:w-1/2">
         <div className="sec-title mb-10">
             <span className="title text-teal-500">Our Goal</span>
             <h2 className="text-3xl font-semibold">
@@ -47,25 +46,13 @@ const About = () => {
             </h2>
         </div>
         <div className="text text-gray-600 mb-5">
-            Our goal is to provide the best possible
-            service for our customers. We aim at creating
+            We aim at creating
             a community where everyone can feel welcome and valued,
             regardless of their background or professional status. To
             achieve this, we offer various services such as
             consulting, training, and recruitment
             that help individuals and businesses in achieving
-            their goals and aspirations. We are
-            committed to providing quality services with
-            integrity, reliability, and professionalism.
-            The 
-            success of each client is our ultimate objective
-            and we strive to exceed expectations every
-            time.
-            So, 
-            if you have any questions about our services,
-            please don’t hesitate to contact us
-            and let&apos;s work together towards your success
-            today!
+            their goals and aspirations.
         </div>
         <div className="text text-gray-600 mb-5">
             To achieve this goal, we are committed to
@@ -73,14 +60,7 @@ const About = () => {
             of our clients in an efficient manner. We
             strive to maintain open communication with all
             our clients so as to understand their requirements
-            and cater to them accordingly.  of our clients in an efficient manner. We
-            strive to maintain open communication with all
-            our clients so as to understand their requirements
-            and cater to them accordingly.  of our clients in an efficient manner. We
-            strive to maintain open communication with all
-            our clients so as to understand their requirements
-            and cater to them accordingly.
-            
+            and cater to them accordingly.  of our clients in an efficient manner.            
         </div>
         <div className="text text-gray-600 mb-5">
            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem expedita natus dolore nostrum assumenda provident, rem maxime! Veritatis, at. Libero repellendus soluta, tempore quis officia qui ab nesciunt laboriosam corporis!
@@ -89,10 +69,12 @@ const About = () => {
         Corporis placeat doloribus esse. Molestias aliquid ipsum quibusdam aperiam doloribus impedit numquam ratione alias velit esse, error quo quaerat qui eius quod?
         </div>
         <div className="text text-gray-600">
-        Corporis placeat doloribus esse. Molestias aliquid ipsum quibusdam aperiam doloribus impedit numquam ratione alias velit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, reiciendis soluta! Rerum reprehenderit in totam libero praesentium mollitia maxime velit, sunt tenetur ipsa accusamus, dolore repellat suscipit? Laborum, ex quia!
+        Corporis placeat doloribus esse. Molestias aliquid ipsum quibusdam aperiam doloribus impedit numquam ratione alias velit.
         </div>
     </div>
+    </div>
 </section>
+</>
   )};
 
   export default About;
