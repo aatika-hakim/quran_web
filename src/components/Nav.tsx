@@ -63,7 +63,7 @@ const Nav = () => {
 
                     <div className="flex items-center justify-between py-2 md:py-2 md:block">
                         <div className="flex lg:hidden md:hidden text-sm text-white text-center">
-                            <Link href="/" onClick={() => setNavbar(!navbar)} className="h-6 w-6 dark:text-white text-sm text-white py-2 md:px-6 text-center hover:text-teal-700  transition-all duration-300">
+                            <Link href="/" onClick={() => setNavbar(!navbar)} className="text-sm text-white py-2 md:px-6 text-center hover:text-teal-700  transition-all duration-300">
                                 Salwa Quran Academy
                             </Link>
                         </div>
@@ -118,9 +118,10 @@ const Nav = () => {
                                         <div className="absolute z-50 w-40 bg-white border border-[#008080] shadow-md text-sm" onMouseLeave={handleDropdownLeave}>
                                             {/* Dropdown content  */}
                                             <Link href="/qaida" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida</Link>
-                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>15 lines Quran</Link>
                                             <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>16 lines Quran</Link>
+                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>15 lines Quran</Link>
                                             <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Kalima and Dua</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Salah</Link>
                                             <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Translation</Link>
                                         </div>
                                     )}
