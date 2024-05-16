@@ -1,18 +1,35 @@
-export const navigationData = [
-    { label: 'Home', href: '/' },
-    { label: 'About', href: '/about' },
-    { label: 'Courses', href: '/courses' },
-    {
-        label: 'Reading',
-        href: '',
-        subLinks: [
-            { label: 'Qaida', href: '/qaida' },
-            { label: 'Quran', href: '/quran' },
-            { label: 'Books', href: '/books' },
-        ],
-    },
-    { label: 'Fee', href: '/fee' },
-    { label: 'FAQs', href: '/faqs' },
-    { label: 'Blogs', href: '/blog' },
-    { label: 'Contact Us', href: '/contact' },
-];
+const images = [
+    { id: 0, name: 'Image 1', src: '/bg2.jpg' },
+    { id: 1, name: 'Image 2', src: '/bg2.jpg' },
+    { id: 2, name: 'Image 3', src: '/bg2.jpg' },
+    { id: 3, name: 'Image 4', src: '/bg2.jpg' },
+    { id: 4, name: 'Image 5', src: '/bg2.jpg' },
+    { id: 5, name: 'Image 6', src: '/bg2.jpg' },
+    { id: 6, name: 'Image 7', src: '/bg2.jpg' },
+    { id: 7, name: 'Image 8', src: '/bg2.jpg' },
+    { id: 8, name: 'Image 9', src: '/bg2.jpg' },
+    { id: 9, name: 'Image 10', src: '/bg2.jpg' },
+    { id: 10, name: 'Image 11', src: '/bg2.jpg' },
+    { id: 11, name: 'Image 12', src: '/bg2.jpg' },
+    { id: 12, name: 'Image 13', src: '/bg2.jpg' },
+    { id: 13, name: 'Image 14', src: '/bg2.jpg' },
+    { id: 14, name: 'Image 15', src: '/bg2.jpg' },
+    { id: 15, name: 'Image 16', src: '/bg2.jpg' },
+    { id: 16, name: 'Image 17', src: '/bg2.jpg' },
+    { id: 17, name: 'Image 18', src: '/bg2.jpg' },
+    { id: 18, name: 'Image 19', src: '/bg2.jpg' },
+    { id: 19, name: 'Image 20', src: '/bg2.jpg' },
+    { id: 20, name: 'Image 21', src: '/bg2.jpg' },
+    { id: 21, name: 'Image 22', src: '/bg2.jpg' },
+    { id: 22, name: 'Image 23', src: '/bg2.jpg' },
+    { id: 23, name: 'Image 24', src: '/bg2.jpg' },
+    { id: 24, name: 'Image 25', src: '/bg2.jpg' },
+    { id: 25, name: 'Image 26', src: '/bg2.jpg' },
+    { id: 26, name: 'Image 27', src: '/bg2.jpg' },
+    { id: 27, name: 'Image 28', src: '/bg2.jpg' },
+    { id: 28, name: 'Image 29', src: '/bg2.jpg' },
+    { id: 29, name: 'Image 30', src: '/bg2.jpg' },
+  ];
+  
+  export default images;
+  
