@@ -115,7 +115,7 @@ const Nav = () => {
                                         Reading
                                     </button>
                                     {isDropdownOpen && (
-                                        <div className="absolute z-50 w-40 bg-white border border-[#008080] shadow-md text-sm" onMouseLeave={handleDropdownLeave}>
+                                        <div className="absolute z-50 w-40 bg-white border border-[#008080] shadow-md text-sm devide-dotted divide-y-2 divide-teal-400" onMouseLeave={handleDropdownLeave}>
                                             {/* Dropdown content  */}
                                             <Link href="/qaida" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida</Link>
                                             <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>16 lines Quran</Link>
