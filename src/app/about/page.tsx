@@ -4,16 +4,16 @@ import backgroundImageUrl from '../../../public/bg2.jpg';
 import img from '../../../public/about.png'
 import Buttons from '@/components/Button';
 import Head from '@/components/Head';
+import Sidebar from '@/components/Sidebar';
 
 
 const About = () => {
   return (
     <>
         <Head backgroundImage={backgroundImageUrl} heading='About Us' />
-    <section className="about-section px-4 py-20 lg:px-0">
-    <div className="container mx-auto">
-        <div className="items-center">
-            <div className="content-column lg:w-1/2">
+    <section className="container mx-auto px-4 py-20 lg:px-0 flex">
+    <div className="items-center">
+            <div className="content-column lg:w-3/4">
                 <div className="inner-column">
                     <div className="sec-title mb-5">
                     <span className="title text-teal-500">Know about us</span>
@@ -30,7 +30,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        
         <div className="inner-column  relative">
                     <figure className="image-1 mt-10">
                         <a href="#" className="lightbox-image">
@@ -38,7 +38,7 @@ const About = () => {
                         </a>
                     </figure>
                 </div>
-                <div className="mt-10 lg:w-1/2">
+                <div className="mt-10 lg:w-3/4">
         <div className="sec-title mb-10">
             <span className="title text-teal-500">Our Goal</span>
             <h2 className="text-3xl font-semibold">
@@ -72,6 +72,9 @@ const About = () => {
         Corporis placeat doloribus esse. Molestias aliquid ipsum quibusdam aperiam doloribus impedit numquam ratione alias velit.
         </div>
     </div>
+    </div>
+    <div className='hidden lg:flex lg:w-3/4'>
+    <Sidebar />
     </div>
 </section>
 </>
