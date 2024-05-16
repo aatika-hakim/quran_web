@@ -1,5 +1,4 @@
 'use client'
-
 import AboutSec from "@/components/AboutSec"
 import CourseSec from "@/components/CourseSec"
 import FormSec from "@/components/FormSec"
