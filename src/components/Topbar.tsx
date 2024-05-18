@@ -13,7 +13,7 @@ import Nav from "./Nav";
 
 const Topbar: React.FC = () => (
         <div className="w-full text-center items-center">
-            <div className="bg-slate-800 text-white py-1">
+            <div className="bg-slate-800 text-white py-[5px]">
                 <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20">
                     <div className="space-x-6 flex flex-wrap sm:flex-nowrap">
                         <Link href="mailto:info@salwaquranacademy.com" className="flex items-center">
