@@ -13,11 +13,11 @@ import Nav from "./Nav";
 
 const Topbar: React.FC = () => (
         <div className="w-full text-center items-center">
-            <div className="bg-slate-800 text-white">
+            <div className="bg-slate-800 text-white py-1">
                 <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20">
                     <div className="space-x-6 flex flex-wrap sm:flex-nowrap">
                         <Link href="mailto:info@salwaquranacademy.com" className="flex items-center">
-                            <FaEnvelope className="mx-2 w-[25px] h-[25px] bg-gray-500 p-[5px]  rounded-sm" /> info@quranacademy.com
+                            <FaEnvelope className="mx-2 w-[25px] h-[25px] text-teal-600 p-[5px]  rounded-sm" /> info@quranacademy.com
                         </Link>
                         <Link href="" className="flex items-center">
                             <FaSkype className="mx-2 w-[25px] h-[25px] bg-blue-500 p-[5px]  rounded-full" />
