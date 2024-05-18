@@ -140,7 +140,7 @@ export const faqs1 = [
 const FaqSec = () => {
     return (
         <>
-        <h2 className="text-2xl text-semibold text-center pt-10">Frequently Asked Question</h2>
+        <h2 className="text-2xl text-semibold text-center py-10">Frequently Asked Question</h2>
         <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 ">
             {faqs.map((faq, index) => (

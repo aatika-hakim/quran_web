@@ -13,7 +13,7 @@ const readingMaterials = [
 const ReadingMaterial = () => {
     return (
         <div className="container mx-auto py-10">
-            <h1 className="text-3xl p-8 font-bold text-center">Learning material</h1>
+            <h1 className="text-3xl p-8 pb-10 text-center">Learning material</h1>
 
                         <div className='items-center flex flex-col min-w-full'>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-20">
@@ -24,7 +24,7 @@ const ReadingMaterial = () => {
                                         src={material.imageUrl}
                                         alt={material.title}
                                         fill
-                                        className="rounded-full mb-2"
+                                        className="rounded-sm mb-2"
                                     />
                                 </div>
 

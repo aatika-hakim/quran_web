@@ -85,7 +85,7 @@ const ContactForm: React.FC = () => {
     };
 
     return (
-        <div id="register" className="max-w-3xl p-8 bg-white rounded-sm items-end shadow-2xl sm:p-6 md:p-8 dark: dark:border-gray-700 overflow-hidden">
+        <div id="register" className="max-w-3xl p-6 bg-white rounded-sm items-end shadow-2xl sm:p-6 md:p-8 dark: dark:border-gray-700 overflow-hidden">
             <form className="space-y-4" onSubmit={handleSubmit}>
                 {/* Name Input */}
                 <div className='grid grid-col-1 lg:grid-cols-2 gap-4 mb-4'>
@@ -151,11 +151,10 @@ const ContactForm: React.FC = () => {
                     />
                 </div>
                 <div className="text-red-500 text-sm">
-                    {errorMessage && <div>{errorMessage}
+                    {errorMessage && <div>{errorMessage}</div>}
                     <button onClick={()=> handleSubmit} className="text-white rounded-sm shadow-inner bg-gradient-to-br from-teal-500 to-teal-600 hover:bg-gradient-to-bl font-medium text-lg px-10 py-2.5 justify-center">
                         Send
                     </button>
-                    </div>}
                 </div>
             </form>
         </div>

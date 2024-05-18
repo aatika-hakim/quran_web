@@ -9,7 +9,7 @@ const Blog = () => {
                 <div className="-mx-4 flex flex-wrap">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-[60px] text-center lg:mb-20">
-                            <h2 className="mb-4 text-3xl font-bold  sm:text-4xl md:text-[40px]">
+                            <h2 className="mb-4 text-3xl sm:text-4xl md:text-[40px]">
                                 Recent News
                             </h2>
                         </div>

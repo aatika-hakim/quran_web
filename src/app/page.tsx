@@ -7,6 +7,7 @@ import ReadingMaterial from "@/components/RMaterial"
 import Why from "@/components/Why"
 import Blog from "@/components/blog"
 import FAQsPage from "@/components/FAQ"
+import Section from "@/components/Section"
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
         <div className='container mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4'>
         <FAQsPage />
         </div>
+        <Section/>
         <div className='container mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4'>
         <Blog />
         </div>

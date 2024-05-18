@@ -7,7 +7,7 @@ const FormSec = () => {
             <div className="lg:grid lg:grid-cols-12">
                 <section className="relative flex h-32 lg:col-span-5 lg:h-full xl:col-span-6">
                     <div className="hidden lg:relative lg:block lg:p-12">
-                        <h2 className="mt-6 text-2xl font-bold sm:text-3xl md:text-4xl">
+                        <h2 className="my-6 text-3xl md:text-4xl">
                             Send Request
                         </h2>
 
