@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { FaEnvelope, FaFacebookF, FaInstagram, FaPhoneAlt, FaTwitter } from "react-icons/fa";
+import { FaEnvelope, FaFacebookF, FaInstagram, FaPhoneAlt, FaTwitter, FaYoutube } from "react-icons/fa";
 
 
 
@@ -97,17 +97,19 @@ const Footer = () => {
                                         className="flex items-start gap-1.5"
                                     >
                                         <ul className="flex gap-2 justify-start md:gap-4">
-                                        <span className="text-white lg:flex md:shrink-0 hidden">Follow us on: </span>
                                             <li>
-                                            <FaFacebookF className='bg-blue-600 p-2 shrink-0 text-white rounded-full w-7 h-7' />
+                                            <FaFacebookF className='bg-blue-600 p-[6px] shrink-0 text-white rounded-full w-7 h-7' />
                                             </li>
 
                                             <li>
-                                            <FaTwitter className='bg-blue-600 p-2 shrink-0 text-white rounded-full w-7 h-7' />
+                                            <FaTwitter className='bg-blue-600 p-[6px] shrink-0 text-white rounded-full w-7 h-7' />
                                             </li>
 
                                             <li>
-                                            <FaInstagram className="w-7 h-7 shrink-0 rounded-full p-2 text-white bg-gradient-to-r from-purple-500 to-pink-500" />
+                                            <FaInstagram className="w-7 h-7 shrink-0 rounded-full p-[6px] text-white bg-gradient-to-r from-purple-500 to-pink-500" />
+                                            </li>
+                                            <li>
+                                            <FaYoutube className='bg-red-600 p-[6px] shrink-0 text-white rounded-full w-7 h-7' />
                                             </li>
                                         </ul>
                                     </li>

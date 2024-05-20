@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #008080; /* Shiny teal color */
+  font-weight: bold;
+}
+
+/* Text */
+p {
+  color: #000000; /* Black color */
+  font-size: 1rem;
+  line-height: 1.5;
+}

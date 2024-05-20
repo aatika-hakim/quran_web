@@ -4,20 +4,6 @@ import Registration from "./Register";
 export default function Hero() {
     return (
             <section className="bg-slate-950 bg-center bg-no-repeat bg-cover bg-opacity-70">
-                {/* <div className="area">
-			<ul className="circles">
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-				<li />
-			</ul>
-		</div> */}
                 <div className="container mx-auto py-10">
                     <div className="flex flex-col items-center justify-between md:flex-row md:gap-4">
                         <div className="md:w-1/2 md:order-1 md:text-left">

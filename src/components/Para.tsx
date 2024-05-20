@@ -2,10 +2,10 @@ import Image from 'next/image';
 import React, { useState } from 'react';
 
 interface ParaProps {
-    pdfUrls: string[];
+    Urls: string[];
 }
 
-const Para: React.FC<ParaProps> = ({ pdfUrls }) => {
+const Para: React.FC<ParaProps> = ({ Urls }) => {
     const [selectedPara, setSelectedPara] = useState<number | null>(null);
 
     const handleClick = (index: number) => {
@@ -18,7 +18,7 @@ const Para: React.FC<ParaProps> = ({ pdfUrls }) => {
                 {Array.from({ length: 30 }, (_, index) => (
                     <div key={index} className="p-8 relative" onClick={() => handleClick(index)}>
                         <Image
-                            src={`/images/image${index + 1}.jpg`}
+                            src={`/Para01/${index + 1}.jpg`}
                             className="w-[120px] h-[100px] rounded-sm sm:rounded-none md:rounded-sm"
                             // {`Para ${index + 1}`}
                             alt=""
@@ -35,10 +35,9 @@ const Para: React.FC<ParaProps> = ({ pdfUrls }) => {
             </div>
             <div className="flex-1 pl-8">
                 {selectedPara !== null && (
-                    <div className="overflow-y-scroll h-[700px] w-[500px] justify-center overflow-hidden">
-                        {/* Display the PDF in an iframe */}
+                    <div className="overflow-y-scroll h-auto w-[500px] justify-center overflow-hidden">
                         <iframe
-                            src={pdfUrls[selectedPara]}
+                            src={Urls[selectedPara]}
                             width="100%"
                             height="100%"
                             title={`Para ${selectedPara + 1}`}

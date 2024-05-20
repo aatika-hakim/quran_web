@@ -1,3 +1,33 @@
+import image from '../public/bg2.jpg';
+import { BlogPost } from './types';
+
+export const blogPosts: BlogPost[] = [
+    {
+        date: "Dec 22, 2023",
+        title: "Meet AutoManage, the best AI management tools",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        buttonText: "Read More",
+        buttonLink: "/blogDetail",
+        image: image,
+    },
+    {
+        date: "Dec 22, 2023",
+        title: "Meet AutoManage, the best AI management tools",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        buttonText: "Learn More",
+        buttonLink: "/blogDetail",
+        image: image,
+    },
+    {
+        date: "Dec 22, 2023",
+        title: "Meet AutoManage, the best AI management tools",
+        description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+        buttonText: "Explore",
+        buttonLink: "/blogDetail",
+        image: image,
+    },
+];
+
 const images = [
     { id: 0, name: 'Juz 1', src: '/para01/para01.jpg' },
     { id: 1, name: 'Juz 2', src: '/bg2.jpg' },

@@ -55,11 +55,11 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonText, buttonL
     return (
         <>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div className="max-w-xl shadow-xl">
+                <div className="max-w-xl shadow-2xl border border-teal-100 transition">
                     <div className="mb-2 overflow-hidden rounded-t-md">
                         <Image height={200} width={200} src={image} alt="" className="w-full" />
                     </div>
-                    <div className="p-2 text-base lg:text-xl">
+                    <div className="py-2 px-4 text-base lg:text-xl">
                         {date && (
                             <span className="mb-3 inline-block rounded bg-primary py-1 text-center text-xs font-light leading-loose dark:text-white">
                                 {date}
@@ -78,7 +78,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonText, buttonL
                         </p>
                         {/* Button with different text for each card */}
                         <a href={buttonLink} className="block">
-                            <button className="text-white rounded-sm shadow-inner bg-[#008080] text-xs md:text-sm px-9 py-2.5 justify-center inline-block shrink-0 border border-teal-700 transition-all duration-300 focus:outline-none active:text-teal-700 mt-5">
+                            <button className="text-white rounded-sm shadow-inner bg-[#008080] text-xs md:text-sm px-6 py-2 justify-center inline-block shrink-0 border border-teal-700 transition-all duration-300 focus:outline-none active:text-teal-700 mt-5">
                                 Read More
                             </button>
                         </a>
