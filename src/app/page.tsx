@@ -14,7 +14,6 @@ export default function Home() {
     <>    
     <main className='main h-fit min-w-full'>
       <Hero />
-      <div className=''>
         <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 py-8'>
         <AboutSec />
         </div>
@@ -35,7 +34,6 @@ export default function Home() {
         <Blog />
         </div>
       <FormSec />
-      </div>
     </main>
     </>
   )
