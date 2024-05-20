@@ -15,7 +15,7 @@ import Image from "next/image";
 const Topbar: React.FC = () => (
         <div className="w-full text-center items-center">
             <div className="bg-slate-800 text-white">
-                <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20">
+                <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20 h-10">
                     <div className="space-x-14 flex">
                         <Link href="mailto:support@salwaquranacademy.com" className="flex items-center text-xs">
                             <FaEnvelope className="w-7 h-7 text-gray-300 p-[5px]" /> support@salwaquranacademy.com
@@ -34,7 +34,7 @@ const Topbar: React.FC = () => (
             </div>
             <div className="hidden font-sans lg:flex flex-1 bg-white">
                 <div className="flex items-center justify-between">
-                    <div className="flex items-center py-4">
+                    <div className="flex items-center py-2">
                         <Link href="/">
                             <Image src={logo} alt="logo" className="bg-transparent" />
                         </Link>
