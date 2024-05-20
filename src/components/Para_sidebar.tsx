@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { juz_names } from '@/data';
+import { juz_names } from '@/utils/data';
 
 interface Image {
   id: number;

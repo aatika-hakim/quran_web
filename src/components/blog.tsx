@@ -1,12 +1,12 @@
 import Image from "next/image";
 import React from "react";
-import image from '../../public/bg2.jpg';
+import image from '@/images/bg2.jpg';
 
 const Blog = () => {
     return (
         <>
-            <section className="container mx-auto px-8 py-8 lg:py-10">
-                <div className="-mx-4 flex flex-wrap">
+            <section className="bg-white pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
+                <div className="container">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-[60px] text-center lg:mb-20">
                             <h2 className="mb-4 text-3xl sm:text-4xl md:text-[40px]">
@@ -51,7 +51,7 @@ const Blog = () => {
 
 export default Blog;
 
-const BlogCard = ({ image, date, CardTitle, CardDescription, buttonText, buttonLink }: any) => {
+const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) => {
     return (
         <>
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">

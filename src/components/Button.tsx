@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import { ButtonsProps } from "@/types";
+import { ButtonsProps } from "@/utils/types";
 
 
 const Buttons: React.FC<ButtonsProps> = ({ type, text, links, properties }) => {

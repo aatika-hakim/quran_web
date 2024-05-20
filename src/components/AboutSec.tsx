@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Button from "./Button";
+import aboutImg from '../../public/bg2.jpg'
 
 const AboutSection = () => {
     return (
@@ -9,7 +10,7 @@ const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                     <div className="mt-12 md:mt-0">
                         <Image
-                            src="/bg2.jpg"
+                            src={aboutImg}
                             objectFit="cover"
                             height={378}
                             width={640}

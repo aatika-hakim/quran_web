@@ -1,23 +1,24 @@
 import React from "react";
+import logo from "@/images/logo.jpg"
 import {
     FaEnvelope,
     FaFacebookF,
     FaInstagram,
     FaSkype,
     FaTwitter,
-    FaWhatsapp,
     FaYoutube,
 } from "react-icons/fa";
 import Link from "next/link";
 import Nav from "./Nav";
+import Image from "next/image";
 
 const Topbar: React.FC = () => (
         <div className="w-full text-center items-center">
             <div className="bg-slate-800 text-white">
                 <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20">
-                    <div className="space-x-6 flex flex-wrap sm:flex-nowrap">
-                        <Link href="mailto:info@salwaquranacademy.com" className="flex items-center">
-                            <FaEnvelope className="mx-2 w-7 h-7 text-teal-600 p-[5px]  rounded-sm" /> info@quranacademy.com
+                    <div className="space-x-14 flex">
+                        <Link href="mailto:support@salwaquranacademy.com" className="flex items-center text-xs">
+                            <FaEnvelope className="w-7 h-7 text-gray-300 p-[5px]" /> support@salwaquranacademy.com
                         </Link>
                         <Link href="" className="flex items-center">
                             <FaSkype className="mx-2 w-6 h-6 bg-blue-500 p-[5px]  rounded-full" />
@@ -31,8 +32,14 @@ const Topbar: React.FC = () => (
                     </div>
                 </div>
             </div>
-            <div className="hidden py-7 font-sans lg:flex flex-1 bg-white">
-                <h1 className="text-3xl p-4 text-black ml-4 sm:ml-10">Salwa Quran Academy</h1>
+            <div className="hidden font-sans lg:flex flex-1 bg-white">
+                <div className="flex items-center justify-between">
+                    <div className="flex items-center py-4">
+                        <Link href="/">
+                            <Image src={logo} alt="logo" className="bg-transparent" />
+                        </Link>
+                    </div>
+                </div>
             </div>
             <Nav/>
         </div>

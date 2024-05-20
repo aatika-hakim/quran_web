@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import ParaImage from '@/components/ParaImage';
 import Sidebar from '@/components/Sidebar';
-import images from '@/data';
+import images from '@/utils/data';
 import Para_sidebar from '@/components/Para_sidebar';
 import Image from 'next/image';
 
