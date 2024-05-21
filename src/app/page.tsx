@@ -14,25 +14,13 @@ export default function Home() {
     <>    
     <main className='main h-fit min-w-full'>
       <Hero />
-        <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 py-8'>
         <AboutSec />
-        </div>
-        <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4'>
         <CourseSec />
-        </div>
-        <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4'>
         <ReadingMaterial />
-        </div>
-        <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 py-12'>
         <Why />
-        </div>
-        <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4'>
         <FAQsPage />
-        </div>
         <Section/>
-        <div className='container lg:mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4'>
         <Blog />
-        </div>
       <FormSec />
     </main>
     </>

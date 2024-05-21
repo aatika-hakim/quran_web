@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "@/images/logo.jpg"
+import logo from "../../public/images/logo.jpg"
 import {
     FaEnvelope,
     FaFacebookF,
@@ -36,7 +36,7 @@ const Topbar: React.FC = () => (
                 <div className="flex items-center justify-between">
                     <div className="flex items-center py-2">
                         <Link href="/">
-                            <Image src={logo} alt="logo" className="bg-transparent" />
+                            <img src='/images/logo.jpg' alt="logo" className="bg-transparent" />
                         </Link>
                     </div>
                 </div>

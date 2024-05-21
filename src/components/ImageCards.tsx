@@ -11,7 +11,7 @@ const ImageCards: React.FC<CardProps> = ({ title, text }) => {
         <div className="p-4 h-[300px] overflow-hidden">
             <div className="flex flex-col bg-white border border-gray-200 rounded-sm shadow md:flex-row md:max-w-full hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700">
                 <div className="w-1/3">
-                    <Image className="object-cover w-full h-full rounded-sm sm:rounded-none md:rounded-sm" src="/bg2.jpg" alt="" width={100} height={100} />
+                    <img className="object-cover w-full h-full rounded-sm sm:rounded-none md:rounded-sm" src="/bg2.jpg" alt="" width={100} height={100} />
                 </div>
                 <div className="w-1/2">
                     <div className="flex flex-col px-8 py-2 h-[300px] w-full">

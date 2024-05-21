@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import backgroundImageUrl from '../../../public/bg2.jpg';
-import img from '@/images/about.png'
+import img from '../../../public/images/about.png'
 import Buttons from '@/components/Button';
 import Head from '@/components/Head';
 import Sidebar from '@/components/Sidebar';
@@ -12,7 +12,7 @@ const About = () => {
     <>
         <Head backgroundImage={backgroundImageUrl} heading='About Us' />
     <section className="container mx-auto px-4 py-20 lg:px-0 flex">
-    <div className="items-center">
+    <div className="items-center  mx-4">
             <div className="content-column lg:w-3/4">
                 <div className="inner-column">
                     <div className="sec-title mb-5">
@@ -34,7 +34,7 @@ const About = () => {
         <div className="inner-column  relative">
                     <figure className="image-1 mt-10">
                         <a href="#" className="lightbox-image">
-                        <Image alt="about" src={img} className="w-[700px] h-[400px]" width={300} height={200} />
+                        <img alt="about" src='/images/about.png' className="w-[700px] h-[400px]" width={300} height={200} />
                         </a>
                     </figure>
                 </div>

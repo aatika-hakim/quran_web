@@ -12,8 +12,7 @@ const FormSec = () => {
                         </h2>
 
                         <p className="mt-4 leading-relaxed">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-                            quibusdam aperiam voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia, nesciunt ipsam ducimus similique voluptatibus, a voluptatum voluptatem, sequi ipsa ipsum totam saepe consequuntur. Quaerat quis ratione officia adipisci inventore. Vel?
+                            Have questions or need more information about our courses? Fill out the form, and we’ll get back to you as soon as possible. Our team is here to help you on your Quranic learning journey.
                         </p>
                     </div>
                 </section>
@@ -29,12 +28,11 @@ const FormSec = () => {
                             </h1>
 
                             <p className="mt-4 mb-2 leading-relaxed text-gray-500">
-                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi nam dolorum aliquam,
-                                quibusdam aperiam voluptatum.
+                                Have questions or need more information about our courses? Fill out the form, and we’ll get back to you as soon as possible. Our team is here to help you on your Quranic learning journey.
                             </p>
                         </div>
 
-                    <ContactForm />
+                        <ContactForm />
                     </div>
                 </div>
             </div>

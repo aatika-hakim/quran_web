@@ -1,11 +1,10 @@
-import Image from "next/image";
 import React from "react";
-import image from '@/images/bg2.jpg';
+import image from '../../public/bg2.jpg';
 
 const Blog = () => {
     return (
         <>
-            <section className="bg-white pb-10 pt-20 lg:pb-20 lg:pt-[120px]">
+            <section className="bg-white lg:pt-[120px] container mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-8">
                 <div className="container">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-[60px] text-center lg:mb-20">
@@ -18,24 +17,24 @@ const Blog = () => {
                     <div className="flex flex-wrap gap-y-4">
                         <BlogCard
                             date="Dec 22, 2023"
-                            CardTitle="Meet AutoManage, the best AI management tools"
-                            CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            CardTitle="How to Purify Yourself as a Muslim?"
+                            CardDescription="Purification is a fundamental aspect of a Muslim's life. In Islam, two primary methods of purification are Wudu (ablution) and Ghusl (full-body purification)."
                             image={image}
                             buttonText="Read More"
                             buttonLink="/blogDetaile"
                         />
                         <BlogCard
                             date="Dec 22, 2023"
-                            CardTitle="Meet AutoManage, the best AI management tools"
-                            CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            CardTitle="Tajweed Rules: Enhancing Your Quranic Recitation"
+                            CardDescription="Tajweed refers to the set of rules governing the pronunciation of the Quran.It helps us recite the Quran exactly as Prophet Muhammad (PBUH) did."
                             image={image}
                             buttonText="Learn More"
                             buttonLink="/blogDetaile"
                         />
                         <BlogCard
                             date="Dec 22, 2023"
-                            CardTitle="Meet AutoManage, the best AI management tools"
-                            CardDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+                            CardTitle="Quran Reading for Muslims: A Spiritual Journey"
+                            CardDescription="Reading the Quran is a profound spiritual practice for Muslims. It is not just about reading the words but understanding, reflecting, and implementing its teachings..."
                             image={image}
                             buttonText="Explore"
                             buttonLink="/blogDetaile"
@@ -57,7 +56,8 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="max-w-xl shadow-2xl border border-teal-100 transition">
                     <div className="mb-2 overflow-hidden rounded-t-md">
-                        <Image height={200} width={200} src={image} alt="" className="w-full" />
+                        <img width={200} 
+                        src={image} alt="" className="w-full" />
                     </div>
                     <div className="py-2 px-4 text-base lg:text-xl">
                         {date && (
@@ -73,7 +73,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) 
                                 {CardTitle}
                             </a>
                         </h3>
-                        <p className="inline-block text-sm hover:text-primary dark:text-white lg:text-lg">
+                        <p className="inline-block text-xs hover:text-primary dark:text-white lg:text-sm">
                             {CardDescription}
                         </p>
                         {/* Button with different text for each card */}

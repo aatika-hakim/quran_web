@@ -91,12 +91,12 @@ const ContactForm: React.FC = () => {
                 <div className='grid grid-col-1 lg:grid-cols-2 gap-4 mb-4'>
                     <div>
                         <label htmlFor="name" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
-                            Your Name
+                            Name
                         </label>
                         <input
                             type="text"
                             id="name"
-                            placeholder="Enter your name"
+                            placeholder="Enter Name"
                             className="border border-gray-300 text-gray-900 text-sm rounded-sm items-end focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark: dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                             value={name}
                             onChange={handleNameChange}

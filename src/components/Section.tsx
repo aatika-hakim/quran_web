@@ -40,7 +40,7 @@ function Section() {
   ];
 
   return (
-    <section className="container mx-auto border-b-2 border-secondary b py-10 lg:py-16">
+    <section className="container mx-auto border-b-2 border-secondary border-gray-200 py-10 lg:py-16">
       <h2 className="text-4xl text-center">What makes us special</h2>
       <div className="mt-8 grid smid-cols-1 gap-8 md:mt-16 md:gsmd-cols-2 md:gap-12 lg:grid-cols-4">
         {cards.map((card, index) => (

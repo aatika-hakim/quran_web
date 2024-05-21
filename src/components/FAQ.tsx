@@ -32,7 +32,7 @@ const FAQ: React.FC<FaqsProps> = ({ question, answer }) => {
                             fill="none"
                             viewBox="0 0 24 24"
                             stroke="currentColor"
-                            className="text-tertiary"
+                            className="text-sm"
                         >
                             <path
                                 strokeLinecap="round"
@@ -45,7 +45,7 @@ const FAQ: React.FC<FaqsProps> = ({ question, answer }) => {
                 </button>
                 {isOpen && (
                     <div className="p-2 border-b border-gray-200">
-                        <p className="text-tertiary">{answer}</p>
+                        <p className="text-sm">{answer}</p>
                     </div>
                 )}
             </div>
@@ -75,7 +75,7 @@ const Faq1: React.FC<Faqs1Props> = ({ questions, answers }) => {
                         fill="none"
                         viewBox="0 0 24 24"
                         stroke="currentColor"
-                        className="text-tertiary"
+                        className="text-sm"
                     >
                         <path
                             strokeLinecap="round"
@@ -88,7 +88,7 @@ const Faq1: React.FC<Faqs1Props> = ({ questions, answers }) => {
             </button>
             {isOn && (
                 <div className="p-2 border-b border-gray-200">
-                    <p className="text-tertiary">{answers}</p>
+                    <p className="text-sm">{answers}</p>
                 </div>
             )}
         </div>
@@ -97,41 +97,51 @@ const Faq1: React.FC<Faqs1Props> = ({ questions, answers }) => {
 
 export { FAQ, Faq1 }
 
-export const faqs = [
+const faqs = [
     {
-        question: "What is FAQ?",
-        answer: "FAQ stands for Frequently Asked Questions. It's a list of common questions and answers."
+        question: "What age groups do you teach?",
+        answer: "We teach all ages, from children to adults."
     },
     {
-        question: "How can I get started?",
-        answer: "To get started, follow the installation instructions in the documentation."
+        question: "Are the classes online or in-person?",
+        answer: "All our classes are currently online."
     },
     {
-        question: "What is Lorem Ipsum?",
-        answer: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        question: "Do I need to know Arabic to start?",
+        answer: "No, beginners are welcome and no prior knowledge of Arabic is needed."
     },
     {
-        question: "Why do we use it?",
-        answer: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        question: "How can I track my progress?",
+        answer: "We provide regular assessments and feedback to help you track your progress."
+    },
+    {
+        question: "What courses do you offer?",
+        answer: "We offer Noorani Qaida, Quran Reading, Quran Translation, Quran Hifz, Tajweed, and Islamic Studies courses."
     }
+
 ];
+
 
 export const faqs1 = [
     {
-        questions: "What ?",
-        answers: "FAQ stands for Frequently Asked Questions. It's a list of common questions and answers."
+        questions: "How often are classes held?",
+        answers: "Classes are scheduled flexibly to fit your availability."
     },
     {
-        questions: "How can ?",
-        answers: "To get started, follow the installation instructions in the documentation."
+        questions: "Can I join at any time?",
+        answers: "Yes, you can enroll in our courses at any time."
     },
     {
-        questions: "What is Lorem Ipsum?",
-        answers: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+        questions: "Do you provide one-on-one tutoring?",
+        answers: "Yes, we offer personalized one-on-one tutoring sessions."
     },
     {
-        questions: "Why do we use it?",
-        answers: "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+        questions: "Is there a fee for the courses?",
+        answers: "Yes, there is a fee for our courses. Please check our website for details."
+    },
+    {
+        questions: "How do I register for a course?",
+        answers: "You can register by filling out the form on our contact page."
     }
 ]
 
@@ -140,6 +150,7 @@ export const faqs1 = [
 const FaqSec = () => {
     return (
         <>
+        <div className="container mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-4">
         <h2 className="text-2xl text-semibold text-center py-10">Frequently Asked Question</h2>
         <div className="flex flex-col md:flex-row">
             <div className="w-full md:w-1/2 lg:w-2/3 xl:w-1/2 ">
@@ -153,6 +164,7 @@ const FaqSec = () => {
                 <Faq1 key={index1} questions={faq1.questions} answers={faq1.answers} />
             ))}
             </div>
+        </div>
         </div>
         </>
     )
