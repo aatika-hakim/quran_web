@@ -3,6 +3,7 @@ import { useState } from 'react';
 import ParaImage from '@/components/ParaImage';
 import Sidebar from '@/components/Sidebar';
 import Para_sidebar from '@/components/Para_sidebar';
+import Image from 'next/image';
 
 interface Image {
   id: number;
@@ -87,7 +88,7 @@ const Page: React.FC = () => {
               <h1 className="mb-1 text-xl text-center">{selectedImage?.name}</h1>
               <button className="mb-1 hover:cursor-pointer" onClick={handleNextImage}>Next</button>
             </div>
-            <img src={selectedImage.src} alt={selectedImage.name} className="max-w-screen bg-teal-400 lg:w-[700px] h-fit pb-4" width={500} />
+            <Image src={selectedImage.src} alt={selectedImage.name} className="max-w-screen bg-teal-400 lg:w-[700px] h-fit pb-4" width={500} height={1000}/>
           </div>
         </div>
       )}

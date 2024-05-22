@@ -34,7 +34,7 @@ const About = () => {
         <div className="inner-column  relative">
                     <figure className="image-1 mt-10">
                         <a href="#" className="lightbox-image">
-                        <img alt="about" src='/images/about.png' className="w-[700px] h-[400px]" width={300} height={200} />
+                        <Image alt="about" src='/images/about.png' className="w-[700px] h-[400px]" width={300} height={200} />
                         </a>
                     </figure>
                 </div>

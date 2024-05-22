@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 interface Image {
@@ -17,7 +18,7 @@ const ParaImage: React.FC<ParaImageProps> = ({ images, onImageClick }) => {
       <div className="grid grid-cols-5 w-4/5 py-10">
         {images.map((image) => (
           <div key={image.id} className="w-2/5 p-2 text-center hover:text-teal-500">
-            <img
+            <Image
               src={image.src}
               alt={image.name}
               className="cursor-pointer w-full transition-transform transform hover:scale-105"
