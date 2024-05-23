@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "./Button";
+import Image from 'next/image'
 
 const AboutSection = () => {
     return (
@@ -7,9 +8,10 @@ const AboutSection = () => {
             <div className="container mx-auto py-16 px-4 sm:px-6 lg:px-8 border-b-2 border-secondary border-gray-200">
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                     <div className="mt-12 md:mt-0">
-                        <img
+                        <Image
                             src='/bg2.jpg'
                             height={378}
+                            objectFit="cover"
                             width={640}
                             alt="about"
                             className="object-cover shadow-md"

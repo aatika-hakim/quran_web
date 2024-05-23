@@ -1,5 +1,6 @@
 import React from "react";
-import image from '../../public/bg2.jpg';
+import image from '../../public/images/bg2.jpg';
+import Image from "next/image";
 
 const Blog = () => {
     return (
@@ -56,8 +57,8 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) 
             <div className="w-full px-4 md:w-1/2 lg:w-1/3">
                 <div className="max-w-xl shadow-2xl border border-teal-100 transition">
                     <div className="mb-2 overflow-hidden rounded-t-md">
-                        <img width={200} 
-                        src={image} alt="" className="w-full" />
+                        <Image width={200} height={200}
+                        src={image} alt="blog" className="w-full" />
                     </div>
                     <div className="py-2 px-4 text-base lg:text-xl">
                         {date && (
@@ -68,7 +69,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) 
                         <h3>
                             <a
                                 href="/#"
-                                className="mb-4 inline-block text-lg font-semibold text-dark hover:text-primary dark:text-white sm:text-lg lg:text-xl xl:text-2xl"
+                                className="mb-4 inline-block text-lg font-semibold text-dark hover:text-primary dark:text-white lg:text-lg xl:text-xl"
                             >
                                 {CardTitle}
                             </a>
