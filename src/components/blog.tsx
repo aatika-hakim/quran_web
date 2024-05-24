@@ -64,7 +64,7 @@ const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) 
                         )}
                         <h3>
                             <a
-                                href="/#"
+                                href="/blogDetaile"
                                 className="mb-4 inline-block text-lg font-semibold text-dark hover:text-primary dark:text-white lg:text-lg xl:text-xl"
                             >
                                 {CardTitle}
