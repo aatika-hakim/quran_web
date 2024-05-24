@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../public/images/logo.jpg"
 import {
     FaEnvelope,
     FaFacebookF,
@@ -16,7 +15,7 @@ const Topbar: React.FC = () => (
         <div className="w-full text-center items-center">
             <div className="bg-slate-800 text-white">
                 <div className="flex flex-col sm:flex-row justify-between mx-4 sm:mx-20 h-10">
-                    <div className="space-x-14 flex">
+                    <div className="lg:space-x-14 flex justify-between">
                         <Link href="mailto:support@salwaquranacademy.com" className="flex items-center text-xs">
                             <FaEnvelope className="w-7 h-7 text-gray-300 p-[5px]" /> support@salwaquranacademy.com
                         </Link>
@@ -33,12 +32,17 @@ const Topbar: React.FC = () => (
                 </div>
             </div>
             <div className="hidden font-sans lg:flex flex-1 bg-white">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between space-x-10">
                     <div className="flex items-center py-2">
                         <Link href="/">
-                            <img src='/images/logo.jpg' alt="logo" className="bg-transparent" />
+                            <Image src='/images/logo.jpg' alt="logo" className="bg- w-full h-20" width={300} height={100} />
                         </Link>
                     </div>
+                    <div className="marquee-container">
+            <div className="marquee">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia dicta dignissimos reprehenderit, cupiditate hic nemo voluptas nisi, facilis numquam incidunt quidem neque nesciunt dolorem. Totam aperiam vel deserunt tempora omnis.
+            </div>
+        </div>
                 </div>
             </div>
             <Nav/>
@@ -50,9 +54,9 @@ interface SocialIconProps {
 }
 
 const SocialIcon: React.FC<SocialIconProps> = ({ icon }) => (
-    <a href="#" className="text-white m-1 mx-2">
+    <Link href="#" className="text-white m-1 mx-2">
         {icon}
-    </a>
+    </Link>
 );
 
 export default Topbar;

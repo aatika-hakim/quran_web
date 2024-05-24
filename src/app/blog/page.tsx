@@ -1,5 +1,5 @@
 import React from 'react'
-import backgroundImageUrl from '../../../public/bg2.jpg';
+import backgroundImageUrl from '@../../../public/bg2.jpg';
 import Head from '@/components/Head';
 import '@/app/globals.css'
 import Blog from '@/components/blog';

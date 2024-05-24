@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
 import backgroundImageUrl from '../../../public/bg2.jpg';
-import img from '../../../public/images/about.png'
 import Buttons from '@/components/Button';
 import Head from '@/components/Head';
 import Sidebar from '@/components/Sidebar';

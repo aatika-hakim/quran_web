@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const readingMaterials = [
     { title: "Noorani Qaida", imageUrl: "/images/about.png" },
@@ -19,9 +20,11 @@ const ReadingMaterial = () => {
                 {readingMaterials.map((material, index) => (
                     <Link key={index} href="/" className="hover:translate-y-1 duration-200 hover:text-teal-500">
                                 <div className="w-[200px] h-[200px] mb-4 relative">
-                                    <img
+                                    <Image
                                         src={material.imageUrl}
                                         alt={material.title}
+                                        width={200}
+                                        height={100}
                                         className="rounded-sm w-[200px] h-[200px] "
                                     />
                                 </div>

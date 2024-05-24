@@ -9,7 +9,7 @@ const AboutSection = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
                     <div className="mt-12 md:mt-0">
                         <Image
-                            src='/bg2.jpg'
+                            src='/images/bg2.jpg'
                             height={378}
                             objectFit="cover"
                             width={640}

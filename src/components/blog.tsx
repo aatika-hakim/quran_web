@@ -1,11 +1,10 @@
 import React from "react";
-import image from '../../public/images/bg2.jpg';
 import Image from "next/image";
 
 const Blog = () => {
     return (
         <>
-            <section className="bg-white lg:pt-[120px] container mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-8">
+            <section className="lg:pt-[120px] container mx-auto border-b-2 border-secondary border-gray-200 pb-20 pt-8">
                 <div className="container">
                     <div className="w-full px-4">
                         <div className="mx-auto mb-[60px] text-center lg:mb-20">
@@ -17,28 +16,25 @@ const Blog = () => {
 
                     <div className="flex flex-wrap gap-y-4">
                         <BlogCard
+                            image='/images/bg2.jpg'
                             date="Dec 22, 2023"
-                            CardTitle="How to Purify Yourself as a Muslim?"
+                            CardTitle="How to Perfome Wuzu?"
                             CardDescription="Purification is a fundamental aspect of a Muslim's life. In Islam, two primary methods of purification are Wudu (ablution) and Ghusl (full-body purification)."
-                            image={image}
-                            buttonText="Read More"
-                            buttonLink="/blogDetaile"
+                            buttonLink="/blog/blogDetaile"
                         />
                         <BlogCard
+                            image='/images/bg2.jpg' 
                             date="Dec 22, 2023"
-                            CardTitle="Tajweed Rules: Enhancing Your Quranic Recitation"
+                            CardTitle="Tajweed"
                             CardDescription="Tajweed refers to the set of rules governing the pronunciation of the Quran.It helps us recite the Quran exactly as Prophet Muhammad (PBUH) did."
-                            image={image}
-                            buttonText="Learn More"
-                            buttonLink="/blogDetaile"
+                            buttonLink="/blog/blogDetaile"
                         />
                         <BlogCard
+                            image='/images/bg2.jpg'
                             date="Dec 22, 2023"
-                            CardTitle="Quran Reading for Muslims: A Spiritual Journey"
-                            CardDescription="Reading the Quran is a profound spiritual practice for Muslims. It is not just about reading the words but understanding, reflecting, and implementing its teachings..."
-                            image={image}
-                            buttonText="Explore"
-                            buttonLink="/blogDetaile"
+                            CardTitle="Quran Reading for Muslims:"
+                            CardDescription="Reading the Quran is a profound spiritual practice for Muslims. It is not just about reading the words but understanding and implementing its teachings..."
+                            buttonLink="/blog/blogDetaile"
                         />
 
 
@@ -54,8 +50,8 @@ export default Blog;
 const BlogCard = ({ image, date, CardTitle, CardDescription, buttonLink }: any) => {
     return (
         <>
-            <div className="w-full px-4 md:w-1/2 lg:w-1/3">
-                <div className="max-w-xl shadow-2xl border border-teal-100 transition">
+            <div className="w-full px-4 md:w-1/2 lg:w-1/3 ">
+                <div className="max-w-xl shadow-2xl border border-teal-100 transition rounded-t-md  bg-white">
                     <div className="mb-2 overflow-hidden rounded-t-md">
                         <Image width={200} height={200}
                         src={image} alt="blog" className="w-full" />

@@ -10,8 +10,10 @@ const Footer = () => {
                 <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-10 sm:px-6 lg:px-8 lg:pt-10">
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                         <div>
-                            <div className="flex justify-center text-3xl text-teal-600 sm:justify-start">
-                                Slawa Quran Academy
+                            <div className="flex justify-start text-3xl text-teal-600">
+                            <Link href="/">
+                            <img src='/images/logo.jpg' alt="logo" className="bg-transparent bg-teal-700 h-16" />
+                        </Link>
                             </div>
 
                             <p className="mt-6 max-w-md leading-relaxed text-white sm:max-w-xs text-left">
@@ -26,25 +28,25 @@ const Footer = () => {
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#">
+                                        <a className="text-white transition hover:text-white/75" href="/about">
                                         About Us
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#">
+                                        <a className="text-white transition hover:text-white/75" href="/materials">
                                             Downloads
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#">
+                                        <a className="text-white transition hover:text-white/75" href="/plans">
                                             Fee Structure
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#"> Quran Course Registration </a>
+                                        <a className="text-white transition hover:text-white/75" href="/contact"> Quran Course Registration </a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,24 +56,24 @@ const Footer = () => {
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#">
-                                            Noorani Qaida
+                                        <a className="text-white transition hover:text-white/75" href="/courses/qaida">
+                                            Noorani Qaida Course
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#">Quran Hifz Program </a>
+                                        <a className="text-white transition hover:text-white/75" href="/courses/hifz">Quran Hifz Program </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#"> Tajweed Course </a>
+                                        <a className="text-white transition hover:text-white/75" href="/courses/tajweed"> Tajweed Course </a>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#"> Arabic Grammer </a>
+                                        <a className="text-white transition hover:text-white/75" href="/courses/arabic"> Arabic Grammer </a>
                                     </li>
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="#"> Quran Translation </a>
+                                        <a className="text-white transition hover:text-white/75" href="/courses/translation"> Quran Translation </a>
                                     </li>
                                 </ul>
                             </div>
@@ -81,8 +83,8 @@ const Footer = () => {
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                    <Link href="mailto:info@salwaquranacademy.com" className="flex gap-1.5 justify-start text-white transition hover:text-teal-600/75">
-                            <FaEnvelope className="w-4 h-4 shrink-0 rounded-sm" /> info@salwaquranacademy.com
+                                    <Link href="mailto:support@salwaquranacademy.com" className="flex gap-1.5 justify-start text-white transition hover:text-teal-600/75">
+                            <FaEnvelope className="w-4 h-4 shrink-0 rounded-sm" /> support@salwaquranacademy.com
                         </Link>
                                     </li>
 
@@ -97,20 +99,20 @@ const Footer = () => {
                                         className="flex items-start gap-1.5"
                                     >
                                         <ul className="flex gap-2 justify-start md:gap-4">
-                                            <li>
+                                            <Link href='https://www.facebook.com'>
                                             <FaFacebookF className='bg-blue-600 p-[6px] shrink-0 text-white rounded-full w-7 h-7' />
-                                            </li>
+                                            </Link>
 
-                                            <li>
+                                            <Link href='https://www.facebook.com'>
                                             <FaTwitter className='bg-blue-600 p-[6px] shrink-0 text-white rounded-full w-7 h-7' />
-                                            </li>
+                                            </Link>
 
-                                            <li>
+                                            <Link href='https://www.facebook.com'>
                                             <FaInstagram className="w-7 h-7 shrink-0 rounded-full p-[6px] text-white bg-gradient-to-r from-purple-500 to-pink-500" />
-                                            </li>
-                                            <li>
+                                            </Link>
+                                            <Link href='https://www.facebook.com'>
                                             <FaYoutube className='bg-red-600 p-[6px] shrink-0 text-white rounded-full w-7 h-7' />
-                                            </li>
+                                            </Link>
                                         </ul>
                                     </li>
                                 </ul>

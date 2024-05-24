@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from 'react';
 import { RxCross2 } from "react-icons/rx";
 import { IoMenu } from 'react-icons/io5';
 import Buttons from './Button';
+import Image from 'next/image';
 
 const Nav = () => {
     const [navbar, setNavbar] = useState(false);
@@ -61,12 +62,13 @@ const Nav = () => {
             <nav className="w-full p-2 bg-slate-900 top-0 z-10">
                 <div className="justify-center px-4 mx-auto lg:max-w-full md:items-center md:flex md:px-8">
 
-                    <div className="flex items-center justify-between py-2 md:py-2 md:block">
+                    <div className="flex items-center justify-between py-1 md:py-2 md:block">
                         <div className="flex lg:hidden md:hidden text-sm text-white text-center">
-                            <Link href="/" onClick={() => setNavbar(!navbar)} className="text-sm text-white py-2 md:px-6 text-center hover:text-teal-700  transition-all duration-300">
-                                Salwa Quran Academy
-                            </Link>
-                        </div>
+                            <Link href="/" onClick={() => setNavbar(!navbar)} className="text-sm text-white py-1 md:px-6 text-center hover:text-teal-700  transition-all duration-300">
+                            <Image src='/images/logo.jpg' alt="logo" className="bg-transparent" width={100} height={4}/>
+                        </Link>
+                    </div>
+
 
                         {/* BUTTON FOR MOBILE */}
                         <div className="md:hidden">

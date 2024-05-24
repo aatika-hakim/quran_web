@@ -21,6 +21,8 @@ const ParaImage: React.FC<ParaImageProps> = ({ images, onImageClick }) => {
             <Image
               src={image.src}
               alt={image.name}
+              width={20}
+              height={20}
               className="cursor-pointer w-full transition-transform transform hover:scale-105"
               onClick={() => onImageClick(image)}
             />
