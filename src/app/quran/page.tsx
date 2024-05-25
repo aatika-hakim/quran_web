@@ -23,7 +23,7 @@ export default function Page() {
     if (selectedImage) {
       const currentIndex = images.findIndex(image => image.id === selectedImage.id);
       const nextIndex = (currentIndex + 1) % images.length;
-      console.log("Next:", nextIndex);
+      console.log("Next", nextIndex);
       setSelectedImage(images[nextIndex]);
     }
   };  

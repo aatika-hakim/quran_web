@@ -17,7 +17,7 @@ const ParaImage: React.FC<ParaImageProps> = ({ images, onImageClick }) => {
     <div className='ml-60'>
       <div className="grid grid-cols-5 w-full py-10">
         {images.map((image) => (
-          <div key={image.id} className="w-3/5 p-2 text-center hover:text-teal-500">
+          <div key={image.id} className="w-4/5 p-2 text-center hover:text-teal-500">
             <Image
               src={image.src}
               alt={image.name}
