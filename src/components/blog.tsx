@@ -8,7 +8,7 @@ const Card = () => {
       <section className="bg-gray-2 pb-10 pt-10 dark:bg-dark lg:pb-20 lg:pt-[80px] border-b-2 border-secondary border-gray-200">
         <div className="container">
         <h2 className="text-3xl text-gray-900 text-center pb-16">Recent News</h2>
-          <div className="grid gap-8 grid-cols-1 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8">
           <BlogCard
           image = "/images/bg2.jpg"
           date = "22 Dec 2024"
