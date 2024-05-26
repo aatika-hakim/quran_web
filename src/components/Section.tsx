@@ -18,22 +18,22 @@ function Card({ icon, title, description }:any) {
 function Section() {
   const cards = [
     {
-      icon: <FaClock />,
+      icon: <FaClock className='w-12 h-12' />,
       title: "Support",
       description: "Reach out to our support team anytime for help with your inquiries."
     },
     {
-      icon: <FaClock />,
+      icon: <FaClock className='w-12 h-12' />,
       title: "Diverse Tutoring Options",
       description: "Highly qualified tutors, including females for teaching children and women."
     },
     {
-      icon: <FaClock />,
+      icon: <FaClock className='w-12 h-12' />,
       title: "Flexible Scheduling",
       description: "Select class timings that fit your, your child's, or your work schedules best."
     },
     {
-      icon: <FaClock />,
+      icon: <FaClock className='w-12 h-12' />,
       title: "Budget-Friendly and Easy",
       description: "Cost-effective plans with family discounts available, making learning convenient and affordable."
     }
