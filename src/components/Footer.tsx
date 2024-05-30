@@ -6,25 +6,25 @@ import { FaEnvelope, FaFacebookF, FaInstagram, FaPhoneAlt, FaTwitter, FaYoutube 
 
 const Footer = () => {
     return (
-    <footer className="bg-gray-900">
+    <footer className="bg-teal-700">
                 <div className="mx-auto max-w-screen-2xl px-4 pb-6 pt-10 sm:px-6 lg:px-8 lg:pt-10">
                     <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
                         <div>
-                            <div className="flex justify-start text-3xl text-teal-600">
+                            <div className="flex justify-start text-3xl text-white">
                             <Link href="/">
-                            <img src='/images/logo.jpg' alt="logo" className="bg-transparent bg-teal-700 h-16" />
+                            <img src='/images/logo.jpg' alt="logo" className="bg-transparent h-16" />
                         </Link>
                             </div>
 
-                            <p className="mt-6 max-w-md leading-relaxed text-white sm:max-w-xs text-left">
+                            <p className="mt-6 max-w-lg leading-relaxed text-white sm:max-w-xs text-left">
                             Salwa Quran Academy is dedicated to spreading the light of the Quran and fostering a deep understanding of its teachings. Our commitment goes beyond imparting knowledge; we strive to instill a love for learning, nurturing a generation of individuals who carry the teachings of the Quran with compassion, wisdom, and a sense of community.{' '}
-                            <Link className="text-teal-600" href="/about">Read More...</Link>
+                            <Link className="text-white" href="/about">Read More...</Link>
                             </p>
                         </div>
 
                         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
                             <div className="text-left">
-                                <p className="text-lg font-semibold text-teal-600 hover:text-teal-600/75">Quick Links</p>
+                                <p className="text-lg font-semibold text-white hover:text-white/75">Quick Links</p>
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
@@ -52,7 +52,7 @@ const Footer = () => {
                             </div>
 
                             <div className="text-left">
-                                <p className="text-lg font-semibold text-teal-600 hover:text-teal-600/75">Courses</p>
+                                <p className="text-lg font-semibold text-white hover:text-white/75">Courses</p>
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
@@ -79,17 +79,17 @@ const Footer = () => {
                             </div>
 
                             <div className="text-left">
-                                <p className="text-lg font-semibold text-teal-600 hover:text-teal-600/75">Get in Touch</p>
+                                <p className="text-lg font-semibold text-white hover:text-white/75">Get in Touch</p>
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                    <Link href="mailto:support@salwaquranacademy.com" className="flex gap-1.5 justify-start text-white transition hover:text-teal-600/75">
+                                    <Link href="mailto:support@salwaquranacademy.com" className="flex gap-1.5 justify-start text-white transition hover:text-white/75">
                             <FaEnvelope className="w-4 h-4 shrink-0 rounded-sm" /> support@salwaquranacademy.com
                         </Link>
                                     </li>
 
                                     <li>
-                                    <span className="flex  gap-1.5 justify-start text-white transition hover:text-teal-600/75">
+                                    <span className="flex  gap-1.5 justify-start text-white transition hover:text-white/75">
                             <FaPhoneAlt className="w-4 h-4 shrink-0 rounded-sm" /> +92 01234567
                         </span>
                                     

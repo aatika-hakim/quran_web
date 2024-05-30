@@ -59,7 +59,7 @@ const Nav = () => {
 
     return (
         <div>
-            <nav className="w-full p-2 bg-slate-900 top-0 z-10">
+            <nav className="w-full p-2 bg-teal-700 top-0 z-10">
                 <div className="justify-center px-4 mx-auto lg:max-w-full md:items-center md:flex md:px-8">
 
                     <div className="flex items-center justify-between py-1 md:py-2 md:block">
@@ -73,7 +73,7 @@ const Nav = () => {
                         {/* BUTTON FOR MOBILE */}
                         <div className="md:hidden">
                             <button
-                                className="p-2 text-[#008080] rounded-md outline-none focus:border-[#008080] focus:border"
+                                className="p-2 text-teal-300 rounded-md outline-none focus:border-teal-300 focus:border"
                                 onClick={() => setNavbar(!navbar)}
                             >
                                 {navbar ? (
@@ -91,55 +91,55 @@ const Nav = () => {
                                 }`}
                         >
                             <ul className="h-screen md:h-auto items-center justify-center md:flex md:space-x-9 lg:space-x-16">
-                                <li className=" text-md text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-[#008080]  border-[#008080] hover:border-b-2  md:hover:text-[#008080] md:hover:bg-transparent transition-all duration-300">
+                                <li className=" text-md text-white py-2 md:px-6 text-center border-b-2 md:border-b-0  hover:bg-teal-300  border-teal-300 hover:border-b-2  md:hover:text-teal-300 md:hover:bg-transparent transition-all duration-300">
                                     <Link href="/" onClick={() => setNavbar(!navbar)}>
                                         Home
                                     </Link>
                                 </li>
                                 <div className="relative inline-block" ref={dropdownRef} onMouseLeave={DropdownLeave}>
-                                    <button onMouseOver={handleClick} className="text-md text-white py-2 md:px-2 justify-self-center text-center border-b-2 md:border-b-0 hover:bg-[#008080] border-[#008080] md:hover:text-[#008080] md:hover:bg-transparent transition-all duration-300">
+                                    <button onMouseOver={handleClick} className="text-md text-white py-2 md:px-2 justify-self-center text-center border-b-2 md:border-b-0 hover:bg-teal-300 border-teal-300 md:hover:text-teal-300 md:hover:bg-transparent transition-all duration-300">
                                         Courses
                                     </button>
                                     {DropdownOpen && (
-                                        <div className="absolute z-50 w-48 bg-white border border-[#008080] shadow-md text-sm divide-dashed divide-y-2 divide-teal-400" onMouseLeave={DropdownLeave}>
+                                        <div className="absolute z-50 w-48 bg-white border border-teal-300 shadow-md text-sm divide-dashed divide-y-2 divide-teal-400" onMouseLeave={DropdownLeave}>
                                             {/* Dropdown content  */}
-                                            <Link href="/qaida" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida Course</Link>
-                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>Quran Reading Course</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Hifz Course</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Translation Course</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Tajweed Course</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Islamic Books Course</Link>
+                                            <Link href="/qaida" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida Course</Link>
+                                            <Link href="/para" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 2 clicked')}>Quran Reading Course</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Hifz Course</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Translation Course</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Tajweed Course</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Islamic Books Course</Link>
                                         </div>
                                     )}
                                 </div>
                                 <div className="relative inline-block" ref={dropdownRef} onMouseLeave={handleDropdownLeave}>
-                                    <button onMouseOver={handleButtonClick} className="text-md text-white py-2 md:px-2 text-center border-b-2 md:border-b-0 hover:bg-[#008080] border-[#008080] md:hover:text-[#008080] md:hover:bg-transparent transition-all duration-300">
+                                    <button onMouseOver={handleButtonClick} className="text-md text-white py-2 md:px-2 text-center border-b-2 md:border-b-0 hover:bg-teal-300 border-teal-300 md:hover:text-teal-300 md:hover:bg-transparent transition-all duration-300">
                                         Reading
                                     </button>
                                     {isDropdownOpen && (
-                                        <div className="absolute z-50 w-40 bg-white border border-[#008080] shadow-md text-sm divide-dashed divide-y-2 divide-teal-400" onMouseLeave={handleDropdownLeave}>
+                                        <div className="absolute z-50 w-40 bg-white border border-teal-300 shadow-md text-sm divide-dashed divide-y-2 divide-teal-400" onMouseLeave={handleDropdownLeave}>
                                             {/* Dropdown content  */}
-                                            <Link href="/qaida" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida</Link>
-                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>16 lines Quran</Link>
-                                            <Link href="/para" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 2 clicked')}>15 lines Quran</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Kalima and Dua</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Salah</Link>
-                                            <Link href="/quran" className="block px-4 py-2 text-[#008080] hover:bg-[#008080] hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Translation</Link>
+                                            <Link href="/qaida" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 1 clicked')}>Noorani Qaida</Link>
+                                            <Link href="/para" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 2 clicked')}>16 lines Quran</Link>
+                                            <Link href="/para" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 2 clicked')}>15 lines Quran</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Kalima and Dua</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Salah</Link>
+                                            <Link href="/quran" className="block px-4 py-2 text-teal-300 hover:bg-teal-300 hover:text-white" onClick={() => console.log('Option 3 clicked')}>Quran Translation</Link>
                                         </div>
                                     )}
                                 </div>
-                                <li className=" text-md text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#008080]  border-[#008080]  md:hover:text-[#008080] md:hover:bg-transparent hover:border-b-2 transition-all duration-300">
+                                <li className=" text-md text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-teal-300  border-teal-300  md:hover:text-teal-300 md:hover:bg-transparent hover:border-b-2 transition-all duration-300">
                                     <Link href="/blog" onClick={() => setNavbar(!navbar)}>
                                         Blogs
                                     </Link>
                                 </li>
-                                <li className=" text-md text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-[#008080]  border-[#008080]  md:hover:text-[#008080] md:hover:bg-transparent hover:border-b-2 translate-x-1 transition-all duration-300">
+                                <li className=" text-md text-white py-2 px-6 text-center  border-b-2 md:border-b-0  hover:bg-teal-300  border-teal-300  md:hover:text-teal-300 md:hover:bg-transparent hover:border-b-2 translate-x-1 transition-all duration-300">
                                     <Link href="/contact" onClick={() => setNavbar(!navbar)}>
                                         Contact
                                     </Link>
                                 </li>
                                 <li className="hidden lg:flex justify-center">
-                                    <Buttons text='Register Now' properties='text-sm' links='/contact' />
+                                    <Buttons text='Register Now' properties='text-sm bg-slate-700 hover:text-teal-300 ' links='/contact' />
                                 </li>
                             </ul>
                         </div>
