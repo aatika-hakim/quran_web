@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../app/globals.css';
+import Sidebar from './Sidebar';
 
 interface HeaderProps {
     components: React.ReactNode[];
@@ -14,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ components }) => {
                 ))}
             </div>
             <div className="hidden md:w-[20%] h-[95vh] shadow-xl float-right md:block overflow-hidden">
-                {/* <SideBar /> */}
+                <Sidebar/>
             </div>
         </div>
     );
