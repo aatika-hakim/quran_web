@@ -18,7 +18,7 @@ const Footer = () => {
                             </div>
 
                             <p className="mt-6 max-w-lg leading-relaxed text-white sm:max-w-xs text-left">
-                            Salwa Quran Academy is dedicated to spreading the light of the Quran and fostering a deep understanding of its teachings. Our commitment goes beyond imparting knowledge; we strive to instill a love for learning, nurturing a generation of individuals who carry the teachings of the Quran with compassion, wisdom, and a sense of community.{' '}
+                            Salwa Quran Academy is dedicated to spreading the light of the Quran and fostering Link deep understanding of its teachings. Our commitment goes beyond imparting knowledge; we strive to instill Link love for learning, nurturing Link generation of individuals who carry the teachings of the Quran with compassion, wisdom, and Link sense of community.{' '}
                             <Link className="text-white" href="/about">Read More...</Link>
                             </p>
                         </div>
@@ -29,25 +29,25 @@ const Footer = () => {
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/about">
+                                        <Link className="text-white transition hover:text-white/75" href="/about">
                                         About Us
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/materials">
+                                        <Link className="text-white transition hover:text-white/75" href="/materials">
                                             Downloads
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/plans">
+                                        <Link className="text-white transition hover:text-white/75" href="/plans">
                                             Fee Structure
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/contact"> Quran Course Registration </a>
+                                        <Link className="text-white transition hover:text-white/75" href="/contact"> Quran Course Registration </Link>
                                     </li>
                                 </ul>
                             </div>
@@ -57,24 +57,24 @@ const Footer = () => {
 
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/courses/qaida">
+                                        <Link className="text-white transition hover:text-white/75" href="/courses/qaida">
                                             Noorani Qaida Course
-                                        </a>
+                                        </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/courses/hifz">Quran Hifz Program </a>
+                                        <Link className="text-white transition hover:text-white/75" href="/courses/hifz">Quran Hifz Program </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/courses/tajweed"> Tajweed Course </a>
+                                        <Link className="text-white transition hover:text-white/75" href="/courses/tajweed"> Tajweed Course </Link>
                                     </li>
 
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/courses/arabic"> Arabic Grammer </a>
+                                        <Link className="text-white transition hover:text-white/75" href="/courses/arabic"> Arabic Grammer </Link>
                                     </li>
                                     <li>
-                                        <a className="text-white transition hover:text-white/75" href="/courses/translation"> Quran Translation </a>
+                                        <Link className="text-white transition hover:text-white/75" href="/courses/translation"> Quran Translation </Link>
                                     </li>
                                 </ul>
                             </div>
