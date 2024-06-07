@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaEnvelope, FaFacebookF, FaInstagram, FaPhoneAlt, FaTwitter, FaYoutube } from "react-icons/fa";
+import Image from "next/image";
 
 
 
@@ -12,7 +13,7 @@ const Footer = () => {
                         <div>
                             <div className="flex justify-start text-3xl text-white">
                             <Link href="/">
-                            <img src='/images/logo.jpg' alt="logo" className="bg-transparent h-16" />
+                            <Image src='/images/logo.jpg' alt="logo" className="bg-transparent h-16"/>
                         </Link>
                             </div>
 
