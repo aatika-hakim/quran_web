@@ -13,7 +13,7 @@ const Footer = () => {
                         <div>
                             <div className="flex justify-start text-3xl text-white">
                             <Link href="/">
-                            <Image src='/images/logo.jpg' alt="logo" className="bg-transparent h-16"/>
+                            <Image src='/images/logo.jpg' alt="logo" className="bg-transparent h-16" height={64} width={200}/>
                         </Link>
                             </div>
 
@@ -33,28 +33,23 @@ const Footer = () => {
                                         About Us
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-white transition hover:text-white/75" href="/materials">
                                             Downloads
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-white transition hover:text-white/75" href="/plans">
                                             Fee Structure
                                         </Link>
                                     </li>
-
                                     <li>
                                         <Link className="text-white transition hover:text-white/75" href="/contact"> Quran Course Registration </Link>
                                     </li>
                                 </ul>
                             </div>
-
                             <div className="text-left">
                                 <p className="text-lg font-semibold text-white hover:text-white/75">Courses</p>
-
                                 <ul className="mt-8 space-y-4 text-sm">
                                     <li>
                                         <Link className="text-white transition hover:text-white/75" href="/courses/qaida">
