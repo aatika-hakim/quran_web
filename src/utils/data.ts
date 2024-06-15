@@ -29,8 +29,8 @@ export const blogPosts: BlogPost[] = [
 ];
 
 const images = [
-    { id: 1, src: '/images/para01.jpg', name: 'Image 1', folder: '/images/para01' },
-    { id: 2, src: '/images/para01.jpg', name: 'Image 2', folder: '/images/para01' },
+    { id: 1, src: '/images/para01.jpg', name: 'Juz 1', folder: '/images/para01' },
+    { id: 2, src: '/images/para01.jpg', name: 'Juz 2', folder: '/images/para01' },
     // { id: 1, name: 'Juz 2', src: '/bg2.jpg' },
     // { id: 2, name: 'Juz 3', src: '/images/para01.jpg' },
     { id: 3, name: 'Juz 4', src: '/bg2.jpg' },
