@@ -24,3 +24,15 @@ export interface ButtonsProps {
     links: string;
     type?: string;
 }
+
+export interface Image {
+    id: number;
+    src: string;
+    name: string;
+  }
+  
+  export interface Juz {
+    id: number;
+    name: string;
+    images: Image[];
+  }
